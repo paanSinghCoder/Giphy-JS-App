@@ -1,0 +1,107 @@
+html, body{
+    margin:0;
+    padding:0;
+    min-width: 1140px; /* this is the important part*/
+}
+
+.gif {
+    height: 350px;
+    width: 350px;
+}
+
+#header {
+    width:100%;
+    margin:0px auto;
+    height: 300px;
+    /* background-color: #99ccff; */
+    text-align: center;
+    /* background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%); */
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+#header:hover {
+    background-position: right left;
+}
+
+#search-bar {
+    padding-top: 150px;
+}
+
+#search-text {
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+#search-text:hover{
+    /* border-color: #fafafa #b9b9b9 #b9b9b9 #b9b9b9; */
+}
+
+#search-btn {
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    padding: 0 16px;
+    height:36px;
+}
+
+#search-btn:hover {
+    
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*Animations*/
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
